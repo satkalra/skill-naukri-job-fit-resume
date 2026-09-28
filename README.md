@@ -75,4 +75,4 @@ Your candidate profile, career vault, and resume variants are personal data. The
 
 ## Maintainer
 
-Maintainer: TBD
+Maintainer: [@satkalra](https://github.com/satkalra)
