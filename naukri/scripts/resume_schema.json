@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Naukri resume input schema",
+  "type": "object",
+  "required": ["name", "contact", "target_role", "experience", "skills", "education"],
+  "properties": {
+    "name": {"type": "string", "description": "Full name, e.g. 'Jordan Lee'"},
+    "target_role": {"type": "string", "description": "Used for filename and headline, e.g. 'Operations Manager'"},
+    "headline": {"type": "string", "description": "Optional professional headline shown under the name"},
+    "summary": {"type": "string", "description": "Optional 2-4 line professional summary"},
+    "contact": {
+      "type": "object",
+      "required": ["email", "phone", "location"],
+      "properties": {
+        "email": {"type": "string"},
+        "phone": {"type": "string"},
+        "location": {"type": "string", "description": "City, State"},
+        "linkedin": {"type": "string"},
+        "portfolio": {"type": "string"}
+      }
+    },
+    "skills": {
+      "type": "array",
+      "description": "Ordered list of {category, items} groups",
+      "items": {
+        "type": "object",
+        "required": ["category", "items"],
+        "properties": {
+          "category": {"type": "string"},
+          "items": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "employer", "start_date", "end_date", "bullets"],
+        "properties": {
+          "title": {"type": "string"},
+          "employer": {"type": "string"},
+          "location": {"type": "string"},
+          "start_date": {"type": "string", "description": "Month YYYY, e.g. 'March 2022'"},
+          "end_date": {"type": "string", "description": "Month YYYY or 'Present'"},
+          "bullets": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "bullets"],
+        "properties": {
+          "name": {"type": "string"},
+          "link": {"type": "string"},
+          "bullets": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["degree", "institution", "date"],
+        "properties": {
+          "degree": {"type": "string"},
+          "institution": {"type": "string"},
+          "date": {"type": "string", "description": "Month YYYY"},
+          "location": {"type": "string"}
+        }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "issuer"],
+        "properties": {
+          "name": {"type": "string"},
+          "issuer": {"type": "string"},
+          "date": {"type": "string"}
+        }
+      }
+    }
+  }
+}

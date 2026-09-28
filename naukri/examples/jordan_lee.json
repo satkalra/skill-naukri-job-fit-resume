@@ -1,0 +1,77 @@
+{
+  "name": "Jordan Lee",
+  "target_role": "Operations Manager",
+  "headline": "Operations Manager | Supply Chain, Vendor Management and Process Improvement",
+  "summary": "Operations professional with 6+ years of experience managing multi-site logistics and vendor relationships. Delivered process improvements and reporting systems using SQL, Excel and Salesforce. Experienced in taking initiatives from pilot through company-wide rollout.",
+  "contact": {
+    "email": "jordan.lee@example.com",
+    "phone": "555-123-4567",
+    "location": "Denver, CO",
+    "linkedin": "linkedin.com/in/jordanlee",
+    "portfolio": ""
+  },
+  "skills": [
+    {"category": "Core Tools", "items": ["Excel", "SQL", "Salesforce", "Tableau"]},
+    {"category": "Operations", "items": ["Vendor management", "inventory planning", "process improvement"]},
+    {"category": "Systems and Platforms", "items": ["SAP", "NetSuite", "Workday"]}
+  ],
+  "experience": [
+    {
+      "title": "Operations Manager",
+      "employer": "Northwind Analytics",
+      "location": "Denver, CO",
+      "start_date": "March 2022",
+      "end_date": "Present",
+      "bullets": [
+        "Rebuilt the weekly reporting pipeline in SQL and Excel, reducing manual reconciliation work by approximately 20%.",
+        "Managed a multi-state vendor portfolio of 40+ suppliers, renegotiating contract terms across 12 accounts.",
+        "Led a five-person cross-departmental rollout of a new scheduling system, delivering on schedule across 3 sites.",
+        "Introduced a standardized intake checklist for new clients, reducing missing-document follow-ups and simplifying onboarding.",
+        "Reduced average vendor onboarding time from 15 to 9 business days by redesigning the intake workflow."
+      ]
+    },
+    {
+      "title": "Operations Lead",
+      "employer": "Contoso Logistics",
+      "location": "Boulder, CO",
+      "start_date": "June 2019",
+      "end_date": "February 2022",
+      "bullets": [
+        "Led onboarding-process redesign across three regional warehouses, standardizing compliance documentation.",
+        "Coordinated inventory planning for a 200,000 sq. ft. distribution center, cutting stockouts by 15%.",
+        "Trained and supervised a team of 8 warehouse associates across two shifts."
+      ]
+    },
+    {
+      "title": "Operations Coordinator",
+      "employer": "Contoso Logistics",
+      "location": "Boulder, CO",
+      "start_date": "August 2017",
+      "end_date": "May 2019",
+      "bullets": [
+        "Processed and tracked over 500 monthly vendor purchase orders using NetSuite.",
+        "Assisted in migrating vendor records from spreadsheets to a centralized SAP database."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Community Food Bank Logistics Volunteer Program",
+      "link": "",
+      "bullets": [
+        "Designed a volunteer scheduling system for a 30-person weekly distribution effort, reducing no-show rate by roughly 25%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Business Administration",
+      "institution": "State University",
+      "date": "May 2017",
+      "location": "Fort Collins, CO"
+    }
+  ],
+  "certifications": [
+    {"name": "Certified Supply Chain Professional (CSCP)", "issuer": "APICS", "date": "2021"}
+  ]
+}

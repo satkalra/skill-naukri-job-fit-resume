@@ -1,0 +1,18 @@
+# Personal candidate data — never commit your own vault
+my-profile/
+candidate-profile.local.md
+career-vault.local.md
+resume-variants.local.md
+
+# Generated resume output
+*.docx
+*.pdf
+!naukri/examples/**
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor cruft
+.DS_Store
+*.swp
