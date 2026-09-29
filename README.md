@@ -31,6 +31,18 @@ naukri/                       ← the skill folder — zip this to install on Cl
 
 ## Install
 
+### Any coding agent — `npx skills` (recommended)
+
+The [`skills` CLI](https://github.com/vercel-labs/skills) installs into Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Windsurf, Cline, OpenCode and 70+ other agents. It auto-detects which are installed:
+
+```
+npx skills add satkalra/skill-naukri-job-fit-resume
+```
+
+Target one agent with `-a`, e.g. `npx skills add satkalra/skill-naukri-job-fit-resume -a codex` (or `claude-code`, `cursor`, `gemini-cli`, `github-copilot`). Add `-g` to install globally instead of per-project.
+
+The CLI is for agents that read skills from a folder. Claude.ai, Cowork and ChatGPT take a zip upload instead — see below.
+
 ### Claude.ai (Settings → Capabilities/Skills)
 
 1. Zip the `naukri/` folder (not the repo root — just the inner folder).
