@@ -72,6 +72,21 @@ def validate_data(data):
                 fail(f"Education entry {i} missing required field '{key}'.")
         validate_date(edu["date"], f"education[{i}].date")
 
+    for i, skill_group in enumerate(data.get("skills", [])):
+        for key in ["category", "items"]:
+            if key not in skill_group:
+                fail(f"skills[{i}] missing required field '{key}'.")
+
+    for i, cert in enumerate(data.get("certifications", [])):
+        for key in ["name", "issuer"]:
+            if key not in cert:
+                fail(f"certifications[{i}] missing required field '{key}'.")
+
+    for i, proj in enumerate(data.get("projects", [])):
+        for key in ["name", "bullets"]:
+            if key not in proj:
+                fail(f"projects[{i}] missing required field '{key}'.")
+
 
 def safe_filename_component(s):
     return re.sub(r"[^A-Za-z0-9]+", "_", s.strip()).strip("_")

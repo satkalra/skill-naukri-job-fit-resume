@@ -7,7 +7,10 @@ It never fabricates skills, titles, dates, employers, or metrics — every claim
 ## What's inside
 
 ```
-naukri/                       ← the skill folder — zip this to install
+.claude-plugin/
+├── plugin.json                Claude Code plugin manifest (points at naukri/)
+└── marketplace.json           makes this repo a Claude Code plugin marketplace
+naukri/                       ← the skill folder — zip this to install on Claude.ai/Cowork/ChatGPT
 ├── SKILL.md                  entry point: the workflow and when to use each reference
 ├── references/
 │   ├── ats-guidelines.md     the full ATS/resume methodology (V2.1), numbered §1-19
@@ -44,9 +47,20 @@ Same as Claude.ai — upload the zipped `naukri/` folder wherever Cowork lists i
 2. In ChatGPT, open **Skills** and upload the zip. OpenAI's upload flow and file-size limits change periodically — check the current "Skills in ChatGPT" help article on OpenAI's site if the upload doesn't behave as expected.
 3. Start a chat and paste a job description or link.
 
-### Claude Code
+### Claude Code — plugin marketplace (recommended)
 
-Copy the `naukri/` folder into `~/.claude/skills/`:
+This repo is also a Claude Code plugin marketplace, so you don't need to clone or copy anything by hand:
+
+```
+/plugin marketplace add satkalra/skill-naukri-job-fit-resume
+/plugin install naukri@satkalra-marketplace
+```
+
+(Or from the shell: `claude plugin marketplace add satkalra/skill-naukri-job-fit-resume` then `claude plugin install naukri@satkalra-marketplace`.) Auto-update is off by default for third-party marketplaces — re-run `/plugin marketplace add ...` to pick up new versions, or turn auto-update on from `/plugin → Marketplaces`.
+
+### Claude Code — manual skill copy
+
+If you'd rather not add the marketplace, copy just the skill folder into `~/.claude/skills/`:
 
 ```
 cp -r naukri ~/.claude/skills/naukri
@@ -60,7 +74,7 @@ The first time you use the skill, it has no resume or evidence bank to work from
 - `career-vault.md`
 - `resume-variants.md`
 
-Save these into your **Claude Project's project knowledge** (or your **ChatGPT project's files**) so future runs find them automatically without repeating onboarding. If you just want a one-off evaluation, tell the skill "one-off, use this resume" and it will skip building a vault.
+Save these into whatever persistent project/workspace storage your assistant offers — a **Claude Project's project knowledge**, a **ChatGPT project's files**, or just a local folder it can re-read — so future runs find them automatically without repeating onboarding. If you just want a one-off evaluation, tell the skill "one-off, use this resume" and it will skip building a vault.
 
 ## Example prompts
 
@@ -72,6 +86,10 @@ Save these into your **Claude Project's project knowledge** (or your **ChatGPT p
 ## Privacy note
 
 Your candidate profile, career vault, and resume variants are personal data. They live in **your own** Claude Project or ChatGPT project, not in this repository. If you fork or customize this skill, do not commit your own `candidate-profile.md`, `career-vault.md`, or `resume-variants.md` — the included `.gitignore` already excludes common local-data filenames, but double-check before pushing.
+
+## Versioning
+
+This repo follows [semantic versioning](https://semver.org/). The current version is in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`; see `CHANGELOG.md` for release notes. Bump both files' `version` together when you release a change.
 
 ## Maintainer
 

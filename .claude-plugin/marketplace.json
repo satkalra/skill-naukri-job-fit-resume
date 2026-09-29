@@ -1,0 +1,16 @@
+{
+  "name": "satkalra-marketplace",
+  "description": "Satyam Kalra's Claude Code plugins",
+  "owner": {
+    "name": "Satyam Kalra",
+    "url": "https://github.com/satkalra"
+  },
+  "plugins": [
+    {
+      "name": "naukri",
+      "source": ".",
+      "description": "Evaluates a job posting against your resume, scores the fit, and tailors an ATS-safe resume when the verdict is apply.",
+      "version": "1.0.0"
+    }
+  ]
+}

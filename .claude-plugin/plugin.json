@@ -1,0 +1,14 @@
+{
+  "name": "naukri",
+  "displayName": "Naukri — Job Fit & Resume Tailoring",
+  "version": "1.0.0",
+  "description": "Evaluates a job posting against your resume, scores the fit, gives an apply/skip verdict, and produces a tailored ATS-safe resume (DOCX + PDF) when the verdict is apply.",
+  "author": {
+    "name": "Satyam Kalra",
+    "url": "https://github.com/satkalra"
+  },
+  "homepage": "https://github.com/satkalra/skill-naukri-job-fit-resume",
+  "license": "MIT",
+  "keywords": ["job-search", "resume", "ats", "career", "job-application"],
+  "skills": ["./naukri"]
+}

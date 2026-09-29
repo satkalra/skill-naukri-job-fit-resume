@@ -53,7 +53,7 @@ Adjust the exact variant names/count to whatever roles the user is actually targ
 
 Once all three files are drafted, output them in full (as text the user can save, or as files if the environment supports file output) and say plainly:
 
-> Save these three files — `candidate-profile.md`, `career-vault.md`, `resume-variants.md` — to your Claude Project's project knowledge (or your ChatGPT project's files) so future runs of this skill can find them automatically without re-onboarding.
+> Save these three files — `candidate-profile.md`, `career-vault.md`, `resume-variants.md` — to your assistant's persistent project or workspace storage (a Claude Project's project knowledge, a ChatGPT project's files, or a local folder it can re-read) so future runs of this skill can find them automatically without re-onboarding.
 
 Then continue with the job the user originally pasted, if any, using the newly built vault.
 

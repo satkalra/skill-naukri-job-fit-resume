@@ -510,7 +510,7 @@ A resume does not receive points merely because a keyword appears. Points requir
 
 A 90% callback rate cannot be achieved through resume tailoring.
 
-Market baseline (Ashby, 2026, tens of millions of applications): in 2021 roughly 7–8% of applications resulted in an interview; that figure now sits between 3.6% and 4.7% depending on role type, driven by application volume growth (~291+ applications per hire) and rising AI-generated application fraud. Referred and internal candidates progress at substantially higher rates than inbound applicants, which is why channel matters more than any resume edit.
+Market baseline (as reported in industry hiring-platform analyses, e.g. Ashby's aggregate applicant data, circa 2026 — treat as directional, not a verified statistic): interview rates appear to have fallen from roughly 7–8% in 2021 to somewhere around 3.6–4.7% depending on role type, plausibly driven by rising application volume (reportedly 290+ applications per hire in some analyses) and more AI-generated applications. Referred and internal candidates progress at substantially higher rates than inbound applicants, which is why channel matters more than any resume edit. Referred and internal candidates progress at substantially higher rates than inbound applicants, which is why channel matters more than any resume edit.
 
 Even a perfect resume cannot control: internal candidates · previously sourced candidates · referrals · hiring freezes · position cancellations · late applications · recruiter workload · compensation mismatch · immigration constraints · hiring-manager preferences · candidates with more direct domain experience.
 

@@ -13,7 +13,7 @@ This skill turns a job posting into a clear apply/skip decision, and — when th
 
 Look for `candidate-profile.md`, `career-vault.md`, and `resume-variants.md` — in the conversation, in uploaded files, or in connected project/workspace files. If found, load them.
 
-If not found: this is a first run. Load `references/onboarding.md` and follow it — ask for the master resume and hard-gate facts in one compact batch, build the three files from `templates/`, hand them back to the user, and tell them to save the files into their project knowledge (Claude Project) or project files (ChatGPT project) so future runs find them automatically.
+If not found: this is a first run. Load `references/onboarding.md` and follow it — ask for the master resume and hard-gate facts in one compact batch, build the three files from `templates/`, hand them back to the user, and tell them to save the files into whatever persistent project/workspace storage this environment offers (e.g. a Claude Project's project knowledge, a ChatGPT project's files, or a local folder) so future runs find them automatically.
 
 Exception: if the user says this is a one-off and pastes a resume to use just for this job, skip onboarding and proceed with that resume for this run only — but mention that building a vault would make future runs faster and skip fewer steps.
 

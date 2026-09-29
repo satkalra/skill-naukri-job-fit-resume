@@ -1,6 +1,6 @@
 # Output Templates
 
-Exact layouts to reuse when reporting results. Keep tables plain Markdown so they render in both Claude and ChatGPT.
+Exact layouts to reuse when reporting results. Keep tables plain Markdown so they render correctly in any chat interface.
 
 ## 1. Job normalization summary (end of Stage 1)
 
